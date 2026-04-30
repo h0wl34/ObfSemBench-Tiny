@@ -1,11 +1,11 @@
-# 🦠 ObfSemBench-Tiny: A Tiny Semantics Benchmark for Obfuscated Binary Code Analysis
+# 🦠 ObfSemBench: A Tiny Semantics Benchmark for Obfuscated Binary Code Analysis
 
 [![Dataset on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Datasets-Available-orange)](https://huggingface.co/datasets/herb4r/ObfSemBench)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **ObfSemBench-Tiny** is a tiny synthetic C-code benchmark designed to evaluate AI models on **binary code semantic search**, **malware behavior retrieval**, and **robustness against compilation optimizations and algorithmic obfuscation**.
 
-While compact in size (1088 carefully generated functions), it provides a rigorous testing ground by avoiding the noise of real-world malware datasets and offering clean, function-level Ground Truth across 78 specific behaviors and 5 levels of structural obfuscation.
+While compact in size (1170 carefully generated functions), it provides a rigorous testing ground by avoiding the noise of real-world malware datasets and offering clean, function-level Ground Truth across 78 specific behaviors and 5 levels of structural obfuscation.
 
 ---
 
@@ -106,3 +106,7 @@ We provide baseline evaluation metrics using [CLAP-ASM](https://github.com/Hustc
 
 This benchmark was created as part of research on neuro-symbolic malware triage and concept drift mitigation. 
 If you use this benchmark in your research, please refer to the associated thesis/paper (Details TBA).
+
+## Additional Notes
+
+A few functions may fail to compile, so the HF dataset has only 1104 samples.
